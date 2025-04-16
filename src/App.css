@@ -1,3 +1,5 @@
+App.css
+
 .App {
   text-align: center;
 }
@@ -28,6 +30,54 @@
   color: #61dafb;
 }
 
+.btn{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border-radius: 4px;
+  border: none;
+  padding: 0;
+  font-weight: 500;
+}
+.btn-primary{
+  background-color: #4338ca;
+  color: white;
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.06);
+}
+.btn-secondary{
+  background-color: #f5f5f5;
+  color: black;
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.06);
+}
+.btn-size-xl-2xl{
+  height: 48px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+@media (min-width: 768px){
+  .btn-size-xl-2xl{
+    height: 60px;
+    padding: 16px 24px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media (min-width: 1440px){
+  .btn-size-xl-2xl{
+    height: 60px;
+    padding: 16px 24px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +86,4 @@
     transform: rotate(360deg);
   }
 }
+
