@@ -1,12 +1,13 @@
 import React from "react";
 import "./heroSection.css";
-import image from "../../assets/prism.png";
+import FeatureBullet from "../FeatureBullet";
 
 const HeroSection = ({
   type,
   title = "Sample Title",
+  image,
   subtitle = "Hero section description",
-  bullets,
+  content,
 }) => {
   return (
     <div className="hero-section-container">
@@ -14,7 +15,15 @@ const HeroSection = ({
         <div className="hero-section-header">
           <div className="hero-section-header-content">
             <h2 className="hero-section-banner-title">{title}</h2>
-            <p className="hero-section-banner-subtitle">{subtitle}</p>
+            {type === "simple" ? (
+              <p className="hero-section-banner-subtitle">{subtitle}</p>
+            ) : (
+              <div className="hero-section-feature-bullets">
+                {content.map((feature, id) => (
+                  <FeatureBullet key={id} content={feature} />
+                ))}
+              </div>
+            )}
           </div>
           <div className="hero-section-header-actions">
             <button className="btn btn-secondary btn-size-xl-2xl">

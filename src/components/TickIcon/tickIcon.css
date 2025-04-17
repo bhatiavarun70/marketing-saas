@@ -1,0 +1,11 @@
+.tick-icon{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: #EEF2FF;
+    color: #6366F1;
+}
+.check-icon{
+    margin-top: 3px;
+    margin-left: 3px;
+}

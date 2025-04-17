@@ -3,6 +3,9 @@
     font-size: 36px;
     line-height: 40px;
 }
+.hero-section-feature-bullets{
+    margin-top: 1rem;
+}
 .hero-section-banner-subtitle{
     font-size: 18px;
     line-height: 28px;
@@ -10,6 +13,7 @@
 }
 .hero-section-header{
     margin-bottom: 3rem;
+    width: 100%;
 }
 .hero-section-content{
     padding-top: 3rem;
@@ -47,6 +51,7 @@
 }
 @media (min-width: 768px){
 .hero-section-container{
+    border-radius: 4px;
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-right: 12px;
@@ -61,6 +66,9 @@
 .hero-section-banner-title{
     font-size: 3rem;
     line-height: 3rem;
+}
+.hero-section-feature-bullets{
+    margin-top: 4rem;
 }
 .hero-section-banner-subtitle{
     font-size: 20px;
@@ -84,6 +92,9 @@
         font-size: 60px;
         line-height: 60px;
         margin-bottom: 24px;
+    }
+    .hero-section-feature-bullets{
+        margin-top: 40px;
     }
     .hero-section-banner-image{
         width: 100%;
