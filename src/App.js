@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HeroSection from "./components/HeroSection";
 import simpleHeroImage from "./assets/prism.png";
 import heroFeatureBullets from "./assets/heroFeatureBullets.png";
+import featuresRightImage from "./assets/features_side_image1.jpg";
+import featuresLeftImage from "./assets/features_side_image2.jpg";
+import Features from "./components/Features";
 
 function App() {
   return (
@@ -32,6 +35,18 @@ function App() {
                   "Retina display support",
                 ]}
                 image={heroFeatureBullets}
+              />
+            }
+          />
+          <Route
+            path="/features-right-image"
+            element={
+              <Features
+                type="image-right"
+                title="For designers, by designers"
+                subTitle="Unleash boundless creativity with a large repository of images optimized for designers"
+                helpText="High quality images"
+                image={featuresRightImage}
               />
             }
           />

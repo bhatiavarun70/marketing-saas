@@ -1,0 +1,116 @@
+.features-content-wrapper{
+    margin: 1rem;
+    background-color: white;
+    border-radius: 4px;
+}
+.features-content{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.header-container{
+    text-align: center;
+}
+.feature-content{
+    display: flex;
+    gap: 20px;
+}
+.content-image{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.logo-component{
+    height: 24px;
+    width: 24px;
+    color: #4338CA;
+}
+.content-title{
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+    line-height: 28px;
+    color: #171717;
+}
+.content-text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #525252;
+}
+.content-description{
+    margin: 0;
+}
+.feature-content-wrapper{
+    margin-bottom: 3rem;
+}
+.features-image{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.feature-image{
+    width: 100%;
+    height: 180px;
+    border-radius: 4px;
+    margin-bottom: 3rem;
+}
+.help-text{
+    color: #4338CA;
+    font-size: 1rem;
+    margin: 0;
+}
+.title{
+    font-size: 30px;
+    margin: 0;
+}
+.subtitle{
+    font-size: 18px;
+    color: #525252;
+}
+@media (min-width: 768px){
+    .feature-image{
+        height: 394px;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .subtitle{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1440px){
+    .header-container{
+        margin-bottom: 4rem;
+    }
+    .features-content-wrapper{
+        padding: 6rem;
+    }
+    .feature-content-wrapper{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        gap: 40px;
+    }
+    .features-content-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .features-image{
+        width: 100%;
+    }
+}
